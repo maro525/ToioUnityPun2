@@ -7,7 +7,6 @@ using toio;
 public class SimplePun : MonoBehaviourPunCallbacks
 {
     public Cube cube;
-    public int num = 1;
 
     async void Start()
     {
@@ -56,6 +55,7 @@ public class SimplePun : MonoBehaviourPunCallbacks
     }
 
     public void moveToio() {
-        cube.Move(50, -50, 200);
+        cube.Move(50, 50, 200);
+        Debug.Log(cube.x + " - " + cube.y);
     } 
 }

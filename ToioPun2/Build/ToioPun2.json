@@ -1,0 +1,16 @@
+{
+"companyName": "DefaultCompany",
+"productName": "ToioUnityTest",
+"productVersion": "0.1",
+"dataUrl": "ToioPun2.data.unityweb",
+"wasmCodeUrl": "ToioPun2.wasm.code.unityweb",
+"wasmFrameworkUrl": "ToioPun2.wasm.framework.unityweb",
+"graphicsAPI": ["WebGL 2.0","WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20",
+"cacheControl": {"default": "must-revalidate"},
+"developmentBuild": false,
+"multithreading": false,
+"unityVersion": "2019.4.4f1"
+}

@@ -17,24 +17,39 @@ public class CharaScript : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKey(KeyCode.Return)){
-            gameObject.GetComponent<SimplePun>().moveToio();
+        if(Application.isEditor) {
+
+            if (Input.GetKey(KeyCode.Return)){
+                gameObject.GetComponent<SimplePun>().moveToio();
+            }
+            if (Input.GetKey("up"))
+            {
+                transform.position += transform.forward * 0.05f;
+            }
+            if (Input.GetKey("down"))
+            {
+                transform.position -= transform.forward * 0.05f;
+            }
+            if (Input.GetKey("right"))
+            {
+                transform.Rotate(0, 100 * Time.deltaTime, 0) ;
+            }
+            if (Input.GetKey("left"))
+            {
+                transform.Rotate(0, -100 * Time.deltaTime, 0);
+            }
+
         }
-        if (Input.GetKey("up"))
-        {
-            transform.position += transform.forward * 0.05f;
-        }
-        if (Input.GetKey("down"))
-        {
-            transform.position -= transform.forward * 0.05f;
-        }
-        if (Input.GetKey("right"))
-        {
-            transform.Rotate(0, 100 * Time.deltaTime, 0) ;
-        }
-        if (Input.GetKey("left"))
-        {
-            transform.Rotate(0, -100 * Time.deltaTime, 0);
+        else {
+
+            if (Input.touchCount > 0) {
+                
+                Touch touch = Input.GetTouch(0);
+
+                if (touch.phase == TouchPhase.Ended) {
+
+                }
+            }
         }
     }
 }

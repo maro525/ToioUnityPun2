@@ -5,7 +5,13 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/toio-sdk-unity/Assets/toio-sdk/Samples/Sample_WebGL/Sample_UI/Sample_UI.unity
     guid: 076f8717a112b440a9716cdb1a89e1f4
+  - enabled: 0
+    path: Assets/Scenes/ToioPun2.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/toio-sdk-unity/Assets/toio-sdk/Tutorials/1.Basic/0.BasicScene/0.BasicScene.unity
+    guid: e6ea298340acd41fd8971c8ed14186c5
   m_configObjects: {}
